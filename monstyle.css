@@ -1,0 +1,274 @@
+div.container {
+  text-align: center;
+}
+
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    top: 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0);
+    
+    z-index: 1;
+  }
+ /* Links inside the dropdown */
+.dropdown-content a {
+    color:rgb(80, 157, 230);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #209bc0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
+  }
+
+#videobg
+{
+    position: fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9)
+{
+    #videobg
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9)
+{
+    #videobg
+    {
+        width: auto;
+        height: 100%;
+    }
+}
+@media (max-width:767px)
+{
+    #videobg
+    {
+        display: none;
+    }
+    body
+    {
+        background: url('thumbnail.png');
+        background-size: cover;
+    }
+  }
+.nav
+{
+    background-color: aliceblue;
+    position: fixed;
+    z-index: 1;
+    display: inline-block;
+    border: 1px solid rgb(15, 138, 196);
+    width: 200px;
+    height: 200px;
+}
+ul {
+  list-style-type: none !important;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0) !important;
+}
+
+li {
+  float: left !important;
+}
+
+li a {
+  display: block;
+  color: rgb(240, 233, 233);
+  text-align: center;
+  padding: 14px 16px !important;
+  text-decoration: none !important;
+}
+section
+{
+  background-color: rgba(0, 0, 0, 0.582);
+  width: 500px;
+  height: 660px;
+  border: #209bc0;
+  
+}
+.a7a
+{
+  background-color: rgba(0, 0, 0, 0.582);
+  width: 1115px;
+  height: 20px;
+  border: #209bc0;
+  
+}
+.a7a2
+{
+  background-color: rgba(0, 0, 0, 0.582);
+  width: 1115px;
+  height: 500px;
+  border: #209bc0;
+  
+}
+.ol {
+  list-style: none; 
+  border: 2px solid; 
+  
+  display:block;
+   float:left;
+   width:200px; /* adjust */
+   height:500px; /* adjust */
+   padding: 5px; /*adjust*/
+}
+.playlist
+{
+  position: relative;
+  left: 10px;
+}
+.spotifyplayer
+{
+  background-color: rgba(0, 0, 0, 0.582);
+  width: 360px;
+  height: 380px;
+  border: #209bc0;
+}
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: rgba(238, 238, 238, 0);
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f904;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: rgba(3, 157, 168, 0.034);
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background:  rgba(27, 182, 209, 0.849);
+  color: rgba(11, 197, 243, 0.699);
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: rgb(7, 206, 241);
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 0px;
+  left: 40px;
+  background-color: #0ac6ff;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position:relative;
+  left: 80px;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #36a8f4;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #36bef4;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
